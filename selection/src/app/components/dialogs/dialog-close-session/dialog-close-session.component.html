@@ -1,0 +1,8 @@
+<h2 mat-dialog-title class="text-warning"><mat-icon>do_not_disturb</mat-icon> Confirmation</h2>
+<mat-dialog-content>
+    <h4 class="text-secondary text-center">Etes-vous sûr de vouloir fermer la session <span class="text-primary">{{data.value}}</span> ?</h4>
+</mat-dialog-content>
+<mat-dialog-actions class="justify-content-end">
+    <button class="mat-raised-button mat-primary" (click)="save()">Fermer</button>
+    <button class="mat-raised-button mat-warn mx-2" (click)="close()">Annuler</button>
+</mat-dialog-actions>

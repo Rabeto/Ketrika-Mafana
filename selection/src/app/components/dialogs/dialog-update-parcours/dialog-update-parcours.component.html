@@ -1,0 +1,27 @@
+<h2 mat-dialog-title class="text-success"><mat-icon>event_note</mat-icon> Mis à jour</h2>
+<mat-dialog-content class="row" [formGroup]="form">
+    <mat-form-field appearance="fill" class="mx-1">
+        <mat-label>
+            <mat-icon>edit</mat-icon> Etablissement
+        </mat-label>
+        <input type="text" formControlName="etab" matInput >
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" class="mx-1">
+        <mat-label>
+            <mat-icon>edit</mat-icon> Mention
+        </mat-label>
+        <input type="text" formControlName="mention" matInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" class="mx-1">
+        <mat-label>
+            <mat-icon>edit</mat-icon> Parcours
+        </mat-label>
+        <input type="text" formControlName="parcours" matInput>
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions class="justify-content-end">
+    <button class="mat-raised-button mat-primary" (click)="save()" [disabled]="!formValid()">Enregistrer</button>
+    <button class="mat-raised-button mat-warn mx-2" (click)="close()">Annuler</button>
+</mat-dialog-actions>

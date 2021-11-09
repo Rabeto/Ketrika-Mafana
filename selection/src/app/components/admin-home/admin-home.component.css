@@ -1,0 +1,20 @@
+/* .content {
+    
+} */
+
+.button-control {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+    padding-left: 0px;
+    padding-bottom: 17px;
+    justify-content: space-between;
+    align-items: center;
+}  
+
+.control-new {
+    margin-right: 16px;
+}
+.control-wrapper {
+    font-size: 14px;
+}

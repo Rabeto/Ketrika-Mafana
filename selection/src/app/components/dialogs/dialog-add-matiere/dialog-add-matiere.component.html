@@ -1,0 +1,27 @@
+<h2 mat-dialog-title class="text-success"><mat-icon>library_add</mat-icon> Ajouter nouvelle matières</h2>
+<mat-dialog-content [formGroup]="form">
+    <div class="form-group">
+        <label for="">Code Matière</label>
+        <div class="input-group">
+            <input type="text" formControlName="code" class="form-control in-text" placeholder="@Code">
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">Matière</label>
+        <div class="input-group">
+            <input type="text" formControlName="matiere" class="form-control in-text" placeholder="@Matière">
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">Coefficient</label>
+        <div class="input-group">
+            <input type="number" formControlName="coeff" class="form-control in-text" placeholder="@coefficient">
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions  class="justify-content-end">
+    <button class="mat-raised-button mat-primary" (click)="save()" [disabled]="!formValid()">Enregistrer</button>
+    <button class="mat-raised-button mat-warn mx-2" (click)="close()">Annuler</button>
+</mat-dialog-actions>

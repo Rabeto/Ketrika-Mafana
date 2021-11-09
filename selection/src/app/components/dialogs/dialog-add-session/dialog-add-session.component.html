@@ -1,0 +1,24 @@
+<h2 mat-dialog-title class="text-success"><mat-icon>note_add</mat-icon> Ajouter nouvelle session</h2>
+<mat-dialog-content class="row" [formGroup]="form">
+    <mat-form-field appearance="fill" class="mx-1">
+        <mat-label>
+            <mat-icon>event_available</mat-icon> Annee Universitaire
+        </mat-label>
+        <mat-select [(value)]="selectedAnnee">
+            <mat-option *ngFor="let an of annee" value="{{an}}">
+                {{an}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" class="mx-1">
+        <mat-label>
+            <mat-icon>edit</mat-icon> Description
+        </mat-label>
+        <input type="text" formControlName="desc">
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions class="justify-content-end">
+    <button class="mat-raised-button mat-primary" (click)="save()" [disabled]="!formValid()">Enregistrer</button>
+    <button class="mat-raised-button mat-warn mx-2" (click)="close()">Annuler</button>
+</mat-dialog-actions>

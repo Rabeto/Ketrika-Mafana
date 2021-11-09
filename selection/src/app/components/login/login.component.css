@@ -1,0 +1,56 @@
+.k-card-content {
+    padding: 30px;
+}
+
+.alert-log {
+    height: 50px;
+}
+
+.in-uname {
+    text-align: left;
+}
+
+.in-pass {
+    text-align: right;
+}
+
+.in-g-uname:hover .btn-uname, .in-g-pass:hover .btn-pass , #k-animate-btn-r{
+    animation-name: rotation;
+    animation-iteration-count: 2;
+    animation-duration: 1s;
+  }@keyframes rotation{
+    0% {transform: rotate(0deg)}
+    25%   { transform: rotate(20deg)}
+    50% {transform: rotate(0deg)}
+    75%   { transform: rotate(-20deg)}
+  }
+
+  .alert-login{
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    visibility: hidden;
+    color: #f44336;
+  }
+
+  #k-animate-btn {
+      display: none;
+      float: left;
+      margin-top: -56px;
+      animation-name: move;
+      animation-iteration-count: 1;
+      animation-duration: 2s;
+    }@keyframes move{
+      from {margin-left: 0;}
+      to {margin-left: 82%;}
+    }
+
+  #k-animate-btn-r {
+    display: none;
+    float: right;
+    margin-top: -56px;
+}
+
+.icon-button {
+  padding: 0px 5px 0px 0px;
+}

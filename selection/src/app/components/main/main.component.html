@@ -1,0 +1,45 @@
+<div class="kd-bg-light fixed-top" id="navbar">
+  <div class="collapse" id="content-collapse">
+    <div class="p-4 container-fluid">
+      <app-banniere></app-banniere>
+      <ul class="nav nav-flush mb-auto text-center Open-Sans">
+        <li class="nav-item">
+          <a routerLink='/univFianar/selection/home' routerLinkActive="router-link-active" class="nav-link py-3 border-botton"><mat-icon>home</mat-icon> Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink='/univFianar/selection/matieres' routerLinkActive="router-link-active"  class="nav-link py-3 border-botton"><mat-icon>filter_9_plus</mat-icon> Matiere</a>
+        </li>
+        <li class="nav-item">
+          <a (click)="updateCompte()" class="nav-link py-3 border-botton cursor-pointer"><mat-icon>person_pin</mat-icon> Compte</a>
+        </li>
+        <li class="nav-item">
+          <a (click)="changePassword()" class="nav-link py-3 border-botton cursor-pointer"><mat-icon>lock</mat-icon> Securisation</a>
+        </li>
+        <li class="nav-item">
+          <a (click)="deconnecter()" class="nav-link py-3 border-botton cursor-pointer"><mat-icon>settings_power</mat-icon> Deconnexion</a>
+        </li>
+        <li class="nav-item">
+          <button id="display-alert-admin" data-bs-toggle="modal" data-bs-target="#alert-admin" style="visibility: hidden;"></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar kd-bg-light">
+    <div class="container-fluid">
+      <div>
+        <button type="button" class="w3-button w3-circle kd-btn-fab" id="btn-apps" data-bs-toggle="collapse" data-bs-target="#content-collapse" aria-controls="content-collapse" aria-expanded="false" aria-label="Toggle Navigation">
+          <mat-icon>apps</mat-icon>
+        </button>
+        <a routerLink='/univFianar/selection/home' routerLinkActive="router-link-active"  class="navbar-brand KARNIVOR w3-display-left ml-10">GESTION DE SELECTION DE DOSSIERS</a>
+      </div>
+      <div>
+        <button type="button" class="w3-button kd-btn-parcours" *ngIf="parcour">
+          {{parcour.parcoursEtab}}/<span class="text-primary">{{parcour.parcoursName}}</span>
+        </button>
+        <button type="button" class="w3-button kd-btn-user w3-display-container text-success" *ngIf="user">
+          <mat-icon class="w3-display-left ms-4">person</mat-icon> <span class="w3-display-right me-4 text-dark">{{user.compteUsername | uppercase}}</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</div>

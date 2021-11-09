@@ -1,0 +1,56 @@
+<h2 mat-dialog-title class="text-success"><mat-icon>library_add</mat-icon> Ajouter nouveau dossier</h2>
+<mat-dialog-content [formGroup]="form">
+    <div class="row">
+        <div class="col-md-4">
+            <h4 class="text-secondary text-center">ETAT CIVIL</h4>
+            <mat-form-field appearance="fill" class="mx-1">
+                <mat-label><mat-icon>edit</mat-icon> Nom et Prenoms</mat-label>
+                <input type="text" formControlName="nom" matInput placeholder="@Nom">
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="mx-1">
+                <mat-label><mat-icon>edit</mat-icon> Date de naissance</mat-label>
+                <input type="date" formControlName="dateNais" matInput placeholder="@Date de naissance">
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="mx-1">
+                <mat-label><mat-icon>edit</mat-icon> Lieu de naissance</mat-label>
+                <input type="text" formControlName="lieuNais" matInput placeholder="@Lieu de naissance">
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-secondary text-right">DIPLOME </h4>
+            <mat-form-field appearance="fill">
+                <mat-label>Année d'obtention</mat-label>
+                <mat-select [(value)]="selectedAnnee">
+                    <mat-option *ngFor="let annee of annees" value="{{annee}}">{{annee}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Serie</mat-label>
+                <mat-select [(value)]="selectedSerie.abbrev">
+                    <mat-option *ngFor="let serie of series" value="{{serie.abbrev}}">{{serie.desc}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Mention</mat-label>
+                <mat-select [(value)]="selectedMention">
+                    <mat-option *ngFor="let mention of mentions" value="{{mention}}">{{mention}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-secondary"> BACC</h4>
+            <mat-form-field appearance="fill" class="mx-1">
+                <mat-label><mat-icon>edit</mat-icon> Centre</mat-label>
+                <input type="text" formControlName="centre" matInput placeholder="@Centre">
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="mx-1">
+                <mat-label><mat-icon>edit</mat-icon> Numéro d'inscription</mat-label>
+                <input type="text" formControlName="numero" matInput placeholder="@Numero">
+            </mat-form-field>
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions  class="justify-content-end">
+    <button class="mat-raised-button mat-primary" (click)="save()" [disabled]="!formValid()">Enregistrer</button>
+    <button class="mat-raised-button mat-warn mx-2" (click)="close()">Annuler</button>
+</mat-dialog-actions>

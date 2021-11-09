@@ -1,0 +1,20 @@
+.i-animate {
+    animation-name: rotation;
+    animation-iteration-count: 1;
+    margin-left: -50px;
+    animation-duration: 2s;
+    font-size: 90px;
+  }@keyframes rotation{
+    from {font-size: 0px;}
+    to {font-size: 90px;}
+  }
+
+  .text-animate {
+  animation-name: rotation;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  font-size: 90px;
+}@keyframes rotation{
+  from {font-size: 0px;}
+  to {font-size: 90px;}
+}

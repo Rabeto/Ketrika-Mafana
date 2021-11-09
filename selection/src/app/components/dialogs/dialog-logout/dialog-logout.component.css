@@ -1,0 +1,28 @@
+#k-animate-btn-r{
+    animation-name: rotation;
+    animation-iteration-count: 2;
+    animation-duration: 1s;
+  }@keyframes rotation{
+    0% {transform: rotate(0deg)}
+    25%   { transform: rotate(20deg)}
+    50% {transform: rotate(0deg)}
+    75%   { transform: rotate(-20deg)}
+  }
+
+  #k-animate-btn {
+    display: none;
+    float: left;
+    margin-top: -56px;
+    animation-name: move;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+  }@keyframes move{
+    from {margin-left: 0;}
+    to {margin-left: 82%;}
+  }
+
+#k-animate-btn-r {
+  display: none;
+  float: right;
+  margin-top: -56px;
+}

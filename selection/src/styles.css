@@ -1,0 +1,210 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~material-design-icons/iconfont/material-icons.css';
+
+body { margin: 0; font-family: "Oppen Sans", "Helvetica Neue", sans-serif; }
+
+.own-input {
+    border-radius: 50px;
+}
+
+.own-input:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+body {
+    background-image: url('./assets/images/KSLMD.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.p-icon {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.kd-bg-light {
+    background-color: #F5F5F5;
+}
+
+.Open-Sans {
+    font-family: 'Open Sans'!important;
+}
+
+.bg-trans-dark {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fa-lg {
+    font-size: 100px;
+    padding: 30px;
+    margin-left: -90px;
+}
+
+.fa-lg-30 {
+    font-size: 30px;
+}
+
+.kd-bg-trans {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.k-button {
+    height: 56px;
+    border-radius: 50px;
+}
+
+.table-v3 .ui-grid-header {
+    border-top: solid #E5E5E5 2px;
+    border-bottom: 2px solid #d8d8d8;
+    background: none;
+    color: #E9E9E9;
+    padding: 0px;
+    height: 45px;
+}
+
+.table-v3 .ui-grid-header .ui-grid-cell-contents,
+.table-v3 .ui-grid-header .ui-grid-cell-contents span {
+    color: #7c7c7c;
+    padding: 9px 3px 9px 5px !important;
+    text-align: left;
+}
+
+.table-v3 .ui-grid-cell-contents {
+    text-align: left;
+    border: none;
+}
+
+.table-v3 .ui-grid-cell-contents.confirm-toggle{
+    text-align: center;
+}
+
+.table-v3 .ui-grid-header-cell{
+    border-right: solid #E9E9E9 1px;
+    text-align: center;
+}
+
+.table-v3 .ui-grid-header-cell i, .table-v3 .grid_id{
+    padding: 11px 9px 9px 5px !important
+}
+
+.table-v3 .ui-grid-row {
+    height: 45px;
+}
+
+.table-v3 .date-cell {
+    opacity: 0.5;
+}
+
+.table-v3 .grid_id .ui-grid-cell-contents{
+    position: relative;
+    top: 3px;
+}
+
+.text-25 {
+    font-size: 25px;
+  }
+
+.text-30 {
+    font-size: 30px;
+}
+
+.text-18 {
+    font-size: 18px;
+}
+
+.text-90 {
+    font-size: 90px;
+}
+
+label {
+    font-family: 'Open Sans';
+    font-size: medium;
+}
+
+.in-text {
+    background: url('../node_modules/material-design-icons/action/2x_web/ic_input_black_24dp.png');
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: 5px 7px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-left: 30px;
+}
+
+.in-textarea {
+    background: url('../node_modules/material-design-icons/action/2x_web/ic_question_answer_black_36dp.png');
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: 5px 7px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-left: 30px;
+}
+
+.in-select {
+    background: url('../node_modules/material-design-icons/navigation/2x_web/ic_arrow_drop_down_black_24dp.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 98% 3px;
+    width: 250px !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.in-search {
+    background: url('../node_modules/material-design-icons/action/2x_web/ic_search_black_24dp.png');
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: 5px 7px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-left: 30px;
+}
+
+.mr-0 {
+    padding-right: 0px;
+}
+
+
+.button-control {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+    padding-left: 0px;
+    padding-bottom: 17px;
+    justify-content: space-between;
+    align-items: center;
+}  
+
+.button-control-tille {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+    padding-left: 0px;
+    justify-content: space-between;
+    align-items: center;
+}  
+.control-new {
+    margin-right: 16px;
+}
+.control-wrapper {
+    font-size: 14px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.content {
+    padding-top: 70px;
+    z-index: -1;
+}
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';

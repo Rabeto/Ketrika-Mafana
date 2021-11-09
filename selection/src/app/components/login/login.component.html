@@ -1,0 +1,37 @@
+<div class="">
+    <div class="row mt-4 text-center">
+        <div class="col-md-4"></div>
+        <form [formGroup]="loginForm" (ngSubmit)='onSubmitLogin()' class="col-md-4">
+            <mat-card class="bg-trans-dark">
+                <mat-card-title class="KARNIBLA text-white text-25">
+                    <!-- <i class="fa fa-user-lock fa-lg"></i> -->
+                    <mat-icon class="fa-lg">verified_user</mat-icon>
+                </mat-card-title>
+                <mat-card-content class="k-card-content">
+                    <div class="input-group mb-3 in-g-uname">
+                        <div class="input-group-prepend">
+                          <button class="input-group-text bg-white btn-uname icon-button" mat-fab><mat-icon class="fa-lg-30 text-dark">person</mat-icon></button>
+                        </div>
+                        <input type="text" id="nom" formControlName="nom" class="form-control in-uname own-input" placeholder="Username">
+                    </div>
+                    <div class="input-group in-g-pass mb-3">
+                        <input type="password" id='password' formControlName='password' class="form-control in-pass own-input" placeholder="Password">
+                        <div class="input-group-prepend">
+                            <button mat-fab class="input-group-text bg-white btn-pass icon-button"><mat-icon class="fa-lg-30 text-dark">lock</mat-icon></button>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="form-control w3-hover-grey k-button" [disabled]="loginForm.invalid">Connexion</button>
+                    <button mat-fab class="bg-white icon-button" id="k-animate-btn"><mat-icon class="fa-lg-30 text-dark">lock</mat-icon></button>
+                    <button mat-fab class="bg-white icon-button" id="k-animate-btn-r"><mat-icon class="fa-lg-30">lock_open</mat-icon></button>
+                    <div class="alert-login" color="warn">
+                        <strong>Username</strong> or
+                        <strong>Mot de passe</strong> incorrect.
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </form>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+  

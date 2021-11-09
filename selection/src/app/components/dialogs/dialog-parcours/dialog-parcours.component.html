@@ -1,0 +1,9 @@
+<h2 mat-dialog-title class="text-info"><mat-icon>info_circle</mat-icon> Confirmation</h2>
+<mat-dialog-content *ngIf="parcours">
+    <h4><b><mat-icon>label</mat-icon> Etablissement:</b><br><span class="text-primary mx-4">{{parcours.parcoursEtab}}</span></h4>
+    <h4><b><mat-icon>label</mat-icon> Mention:</b><br><span class="text-primary mx-4">{{parcours.parcoursMention}}</span></h4>
+    <h4><b><mat-icon>label</mat-icon> Parcours:</b><br><span class="text-primary mx-4">{{parcours.parcoursName}}</span></h4>
+</mat-dialog-content>
+<mat-dialog-actions class="d-flex justify-content-end">
+    <button class="mat-raised-button mat-warn" (click)="close()">Fermer</button>
+</mat-dialog-actions>

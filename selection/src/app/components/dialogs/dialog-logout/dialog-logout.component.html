@@ -1,0 +1,11 @@
+<h2 mat-dialog-title class="text-danger"><mat-icon>settings_power</mat-icon> Deconnexion</h2>
+<mat-dialog-content>
+    <h4 class="text-primary text-center">Etes-vous sûr de vouloir deconnecter <span *ngIf="user" class="text-success">{{ user.username | uppercase }}</span>  ?</h4>
+    <button (click)="save()" class="form-control w3-hover-grey k-button">Deconnexion</button>
+    <button mat-fab class="bg-white icon-button" id="k-animate-btn"><mat-icon class="fa-lg-30 text-dark">lock_open</mat-icon></button>
+    <button mat-fab class="bg-white icon-button" id="k-animate-btn-r"><mat-icon class="fa-lg-30">lock</mat-icon></button>
+    <br>
+</mat-dialog-content>
+<mat-dialog-actions class="justify-content-end">
+    <button class="mat-raised-button mat-warn mx-2" (click)="close()">Annuler</button>
+</mat-dialog-actions>
